@@ -1,0 +1,34 @@
+{
+  "spark": "4.0.0",
+  "python": "3.10.0",
+  "target_principal": "ventana",
+  "features": [
+    "gen",
+    "rampa_1",
+    "rampa_4",
+    "term_cara",
+    "term_share",
+    "finde",
+    "f_activo",
+    "f_3h",
+    "dow_sin",
+    "dow_cos",
+    "mes_sin",
+    "mes_cos",
+    "bloque",
+    "dow",
+    "mes",
+    "bloque_idx"
+  ],
+  "split": {
+    "valid_desde": "2023-07-01",
+    "test_desde": "2024-01-01",
+    "embargo_horas": 4.0
+  },
+  "horizonte_bloques": [
+    4,
+    8
+  ],
+  "semilla": 42,
+  "bootstrap": 500
+}

@@ -1,0 +1,49 @@
+target,modelo,variable,coef,importancia
+ventana,Regresión logística (ElasticNet),gen,-0.0005908562741538386,0.34350656662205953
+ventana,Regresión logística (ElasticNet),rampa_1,0.0,0.0
+ventana,Regresión logística (ElasticNet),rampa_4,0.0,0.0
+ventana,Regresión logística (ElasticNet),term_cara,0.00016860092227271483,0.02857838991852936
+ventana,Regresión logística (ElasticNet),term_share,4.0156282276795245,0.09812034787937436
+ventana,Regresión logística (ElasticNet),finde,0.0,0.0
+ventana,Regresión logística (ElasticNet),f_activo,0.10777284513532409,0.02402380419115594
+ventana,Regresión logística (ElasticNet),f_3h,0.0,0.0
+ventana,Regresión logística (ElasticNet),dow_sin,0.03055264896483064,0.021646401105681782
+ventana,Regresión logística (ElasticNet),dow_cos,0.0,0.0
+ventana,Regresión logística (ElasticNet),mes_sin,0.07196501387873461,0.046696720936590906
+ventana,Regresión logística (ElasticNet),mes_cos,0.0,0.0
+ventana,Regresión logística (ElasticNet),"bloque horario (one-hot, suma)",,4.375531090847009
+ventana,Árbol de decisión (maxDepth=5),gen,,0.023147936558897804
+ventana,Árbol de decisión (maxDepth=5),rampa_1,,0.0
+ventana,Árbol de decisión (maxDepth=5),rampa_4,,0.0
+ventana,Árbol de decisión (maxDepth=5),term_cara,,0.005148353459839344
+ventana,Árbol de decisión (maxDepth=5),term_share,,0.008558285589248513
+ventana,Árbol de decisión (maxDepth=5),finde,,0.002021477238794605
+ventana,Árbol de decisión (maxDepth=5),f_activo,,0.0
+ventana,Árbol de decisión (maxDepth=5),f_3h,,0.0
+ventana,Árbol de decisión (maxDepth=5),bloque,,0.9482229351351227
+ventana,Árbol de decisión (maxDepth=5),dow,,0.0031307293407868897
+ventana,Árbol de decisión (maxDepth=5),mes,,0.009770282677310234
+t4,Regresión logística (ElasticNet),gen,-0.0005102600052759489,0.2964733838399032
+t4,Regresión logística (ElasticNet),rampa_1,0.0,0.0
+t4,Regresión logística (ElasticNet),rampa_4,0.0,0.0
+t4,Regresión logística (ElasticNet),term_cara,1.275845099417147e-05,0.002160290380174482
+t4,Regresión logística (ElasticNet),term_share,3.2276011405348797,0.07878144023126742
+t4,Regresión logística (ElasticNet),finde,0.0,0.0
+t4,Regresión logística (ElasticNet),f_activo,0.052886637858111686,0.011786757584052248
+t4,Regresión logística (ElasticNet),f_3h,-0.013363462266032407,0.006278726863614219
+t4,Regresión logística (ElasticNet),dow_sin,0.029131362571159204,0.020637562517666228
+t4,Regresión logística (ElasticNet),dow_cos,-0.019716851870382957,0.013915601288893562
+t4,Regresión logística (ElasticNet),mes_sin,0.08408069036083828,0.054596050832867095
+t4,Regresión logística (ElasticNet),mes_cos,0.0,0.0
+t4,Regresión logística (ElasticNet),"bloque horario (one-hot, suma)",,4.435168847129543
+t4,Árbol de decisión (maxDepth=5),gen,,0.0152170198959872
+t4,Árbol de decisión (maxDepth=5),rampa_1,,0.0
+t4,Árbol de decisión (maxDepth=5),rampa_4,,0.0
+t4,Árbol de decisión (maxDepth=5),term_cara,,0.007673323097815345
+t4,Árbol de decisión (maxDepth=5),term_share,,0.003430426924889656
+t4,Árbol de decisión (maxDepth=5),finde,,0.0
+t4,Árbol de decisión (maxDepth=5),f_activo,,0.0
+t4,Árbol de decisión (maxDepth=5),f_3h,,0.0
+t4,Árbol de decisión (maxDepth=5),bloque,,0.9645827415937717
+t4,Árbol de decisión (maxDepth=5),dow,,0.0
+t4,Árbol de decisión (maxDepth=5),mes,,0.009096488487536242

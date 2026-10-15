@@ -1,0 +1,22 @@
+Bloques totales: 50,396 | etiquetados: 34,652 (68.8%) | prevalencia global: 0.1177
+[a] 2022-2023 (entren.+valid.): máximo bloque 41 (18.5 %), mínimo bloque 10 (7.1 %), razón máx/mín 2.61
+[a] 2024 (test): máximo bloque 25 (11.7 %), mínimo bloque 4 (6.1 %), razón máx/mín 1.92
+
+[b] Meses con cobertura < 50 %: ['2022-02', '2023-12', '2024-01', '2024-04']
+[b] Top 5 meses por exposición (S/ millones): {'2023-09': 51.37, '2023-08': 45.52, '2022-12': 45.05, '2023-07': 39.77, '2022-11': 25.73}
+[b] Exposición total en meses con cobertura suficiente: S/ 261.3 M; los 5 meses mayores concentran 79.4%
+
+[b] Por año operativo:
+       prev         mwh  soles_M      n
+dia                                    
+2021  0.053    1529.300    0.405    816
+2022  0.105  110915.285   74.977  12336
+2023  0.161  174349.866  171.103  11280
+2024  0.091   21499.235   18.046  10220
+[b] Prevalencia por mes del año (todos los años, %): {1: 3.2, 2: 9.2, 3: 2.0, 4: 4.3, 5: 3.5, 6: 11.8, 7: 17.2, 8: 15.3, 9: 17.8, 10: 2.9, 11: 24.5, 12: 28.8}
+
+[ep] Episodios: 359 | duración mediana 5 bloques (2.5 h) | p90 29 bloques | máx 249 bloques
+
+[c] P(evento | B1 forzado activo)=0.1205; P(evento | no)=0.0901; RR=1.337 IC95 [0.894, 2.139]; phi=0.0269; bloques con B1 activo: 31,544
+
+[rdo] phi(evento térmico, RDO) = -0.0106 | P(evento|RDO=1)=0.1119 | P(evento|RDO=0)=0.1197
