@@ -1,0 +1,118 @@
+{
+  "entorno": "aws_glue",
+  "escala": "1x",
+  "inicio": "2026-10-10T22:55:26",
+  "etapas": {
+    "silver_a": {
+      "segundos": 274.84,
+      "a1": 4812144,
+      "a2": 6533616,
+      "a3": 63764,
+      "a4": 9587472
+    },
+    "silver_b": {
+      "segundos": 176.66,
+      "b1_mantenimientos": 54055,
+      "b2_potencia_indisponible": 3648,
+      "b3_reprograma": 3801,
+      "b4_pr06": 50396
+    },
+    "gold": {
+      "segundos": 117.91,
+      "despacho": 6533616,
+      "precios": 9587472
+    }
+  },
+  "calidad": {
+    "a1": {
+      "filas_in": 4812144,
+      "filas_silver": 4812144,
+      "claves_duplicadas": 0,
+      "nulos_columna_critica": 0,
+      "pct_completitud": 100.0,
+      "negativos": 0
+    },
+    "a2": {
+      "filas_in": 6533616,
+      "filas_silver": 6533616,
+      "claves_duplicadas": 0,
+      "nulos_columna_critica": 70416,
+      "pct_completitud": 98.922,
+      "negativos": 14,
+      "por_origen": {
+        "solo_programado": 70416,
+        "ambos": 4741728,
+        "solo_ejecutado": 1721472
+      }
+    },
+    "a3": {
+      "filas_in": 63764,
+      "filas_silver": 63764,
+      "claves_duplicadas": 0,
+      "nulos_columna_critica": 0,
+      "pct_completitud": 100.0,
+      "negativos": 0
+    },
+    "a4": {
+      "filas_in": 9587472,
+      "filas_silver": 9587472,
+      "claves_duplicadas": 0,
+      "nulos_columna_critica": 0,
+      "pct_completitud": 100.0,
+      "negativos": 62
+    },
+    "cobertura_a2": {
+      "dias": 1096,
+      "dias_con_programa": 824
+    },
+    "b1_mantenimientos": {
+      "filas_in": 54055,
+      "filas_silver": 54055,
+      "fecha_ilegible_rechazadas": 0
+    },
+    "b2_potencia_indisponible": {
+      "filas_in": 3648,
+      "filas_silver": 3648,
+      "fecha_ilegible_rechazadas": 0
+    },
+    "b3_reprograma": {
+      "filas_in": 3801,
+      "filas_silver": 3801,
+      "fecha_ilegible_rechazadas": 0
+    },
+    "b4_pr06": {
+      "filas_in": 50396,
+      "filas_silver": 50396,
+      "fecha_ilegible_rechazadas": 0
+    },
+    "b4": {
+      "bloques": 50396,
+      "claves_duplicadas": 0,
+      "label_rdo_1": 13146
+    },
+    "gold_despacho": {
+      "filas_a2": 6533616,
+      "filas_gold": 6533616,
+      "join_multiplico_filas": false,
+      "estrategia_join": "BroadcastHashJoin",
+      "filas_sin_costo": 4982016,
+      "por_costo_estado": {
+        "con_costo": 1551600,
+        "fecha_sin_costo": 245664,
+        "central_sin_costo_en_a3": 4736352
+      }
+    },
+    "gold_precios": {
+      "filas": 9587472,
+      "ceros_tratados_como_faltantes": 269627
+    }
+  },
+  "broadcast": true,
+  "etapas_solicitadas": [
+    "silver_a",
+    "silver_b",
+    "gold"
+  ],
+  "total_segundos": 585.88,
+  "fin": "2026-10-10T23:05:12"
+}

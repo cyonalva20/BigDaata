@@ -1,0 +1,5 @@
+6:[Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 4:================================>                         (9 + 7) / 16][
+7:26/10/10 09:21:22 ERROR DiskBlockObjectWriter: Exception occurred while manually close the output stream to file /tmp/blockmgr-198c1b72-6bee-48fe-8434-40a50084ab24/0c/temp_shuffle_b56d8ebf-c669-4291-8758-4b8bba6e2568, No space left on device
+9:java.io.IOException: No space left on device
+42:	Suppressed: java.io.IOException: No space left on device
+61:java.io.IOException: No space left on device

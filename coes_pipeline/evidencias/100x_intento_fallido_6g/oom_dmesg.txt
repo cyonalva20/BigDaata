@@ -1,0 +1,4 @@
+# Transcrito de la salida de `dmesg | grep -i "out of memory"` mostrada el 2026-10-10.
+# El registro del kernel original se perdio al reiniciarse la maquina virtual de WSL.
+[ 4644.772809] Out of memory: Killed process 28849 (java) total-vm:16661008kB, anon-rss:5958224kB, file-rss:408kB, shmem-rss:0kB, UID:1000 pgtables:14536kB oom_score_adj:0
+[ 5229.957328] Out of memory: Killed process 30412 (java) total-vm:16685732kB, anon-rss:6024596kB, file-rss:0kB, shmem-rss:0kB, UID:1000 pgtables:14428kB oom_score_adj:0

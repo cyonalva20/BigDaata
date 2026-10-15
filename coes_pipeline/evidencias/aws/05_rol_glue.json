@@ -1,0 +1,27 @@
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "AWSGlueServiceRole-COES",
+        "RoleId": "AROAUWEXWDCDVVTPDB7CJ",
+        "Arn": "arn:aws:iam::XXXXXXXXXXXX:role/AWSGlueServiceRole-COES",
+        "CreateDate": "2026-10-10T21:36:54Z",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "glue.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        },
+        "Description": "Allows Glue to call AWS services on your behalf. ",
+        "MaxSessionDuration": 3600,
+        "RoleLastUsed": {
+            "LastUsedDate": "2026-10-10T23:05:15Z",
+            "Region": "us-east-1"
+        }
+    }
+}

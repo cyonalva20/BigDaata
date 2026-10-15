@@ -1,0 +1,18 @@
+{
+  "filas": 6533616,
+  "escritura_csv_s": 18.41,
+  "escritura_parquet_sin_particion_s": 11.67,
+  "bytes": {
+    "parquet_particionado_silver": 46380349,
+    "csv_particionado": 642272231,
+    "parquet_sin_particion": 46476871
+  },
+  "lectura_s": {
+    "una_columna_todo_parquet": 0.43,
+    "una_columna_todo_csv": 4.81,
+    "un_mes_parquet_particionado": 0.28,
+    "un_mes_csv_particionado": 0.36,
+    "un_mes_parquet_sin_particion": 0.28
+  },
+  "repeticiones": 3
+}

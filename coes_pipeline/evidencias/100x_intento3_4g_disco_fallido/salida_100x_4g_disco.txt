@@ -1,0 +1,146 @@
+26/10/10 09:23:41 WARN Utils: Your hostname, Carlos resolves to a loopback address: 127.0.1.1; using 10.255.255.254 instead (on interface lo)
+26/10/10 09:23:41 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/10/10 09:23:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 1:=====================>                                   (6 + 10) / 16]                                                                                [Stage 4:================================>                         (9 + 7) / 16][Stage 4:=======================================>                 (11 + 5) / 16][Stage 4:==========================================>              (12 + 4) / 16][Stage 4:=================================================>       (14 + 2) / 16]                                                                                [Stage 7:================================>                         (9 + 7) / 16][Stage 7:================================>                         (9 + 7) / 16][Stage 7:================================>                         (9 + 7) / 16][Stage 7:===================================>                     (10 + 6) / 16][Stage 7:=======================================>                 (11 + 5) / 16][Stage 7:==========================================>              (12 + 4) / 16][Stage 7:==============================================>          (13 + 3) / 16][Stage 7:=================================================>       (14 + 2) / 16][Stage 7:=====================================================>   (15 + 1) / 16][Stage 7:=========================================================(16 + 0) / 16][Stage 9:>                                                       (0 + 16) / 115][Stage 9:>                                                       (1 + 16) / 115][Stage 9:==>                                                     (5 + 16) / 115][Stage 9:====>                                                  (10 + 16) / 115][Stage 9:=====>                                                 (12 + 16) / 115][Stage 9:=======>                                               (15 + 16) / 115][Stage 9:=======>                                               (16 + 16) / 115][Stage 9:========>                                              (17 + 16) / 115][Stage 9:========>                                              (18 + 16) / 115][Stage 9:=========>                                             (20 + 16) / 115][Stage 9:==========>                                            (21 + 16) / 115][Stage 9:===========>                                           (23 + 16) / 115][Stage 9:===========>                                           (24 + 16) / 115][Stage 9:===========>                                           (25 + 16) / 115][Stage 9:============>                                          (26 + 16) / 115][Stage 9:=============>                                         (28 + 16) / 115][Stage 9:=============>                                         (29 + 16) / 115][Stage 9:==============>                                        (30 + 16) / 115][Stage 9:==============>                                        (31 + 16) / 115][Stage 9:===============>                                       (32 + 16) / 115][Stage 9:================>                                      (34 + 16) / 115][Stage 9:=================>                                     (36 + 16) / 115][Stage 9:==================>                                    (39 + 16) / 115][Stage 9:===================>                                   (40 + 16) / 115][Stage 9:===================>                                   (41 + 16) / 115][Stage 9:====================>                                  (42 + 16) / 115][Stage 9:====================>                                  (43 + 16) / 115][Stage 9:=====================>                                 (44 + 16) / 115][Stage 9:=====================>                                 (45 + 16) / 115][Stage 9:======================>                                (46 + 16) / 115][Stage 9:======================>                                (46 + 17) / 115][Stage 9:======================>                                (47 + 16) / 115][Stage 9:======================>                                (48 + 16) / 115][Stage 9:=======================>                               (49 + 16) / 115][Stage 9:=======================>                               (50 + 16) / 115][Stage 9:========================>                              (51 + 16) / 115][Stage 9:========================>                              (52 + 16) / 115][Stage 9:=========================>                             (53 + 16) / 115][Stage 9:=========================>                             (54 + 16) / 115][Stage 9:==========================>                            (55 + 16) / 115][Stage 9:==========================>                            (56 + 16) / 115][Stage 9:===========================>                           (58 + 16) / 115][Stage 9:============================>                          (60 + 16) / 115][Stage 9:=============================>                         (61 + 16) / 115][Stage 9:=============================>                         (62 + 16) / 115][Stage 9:==============================>                        (63 + 16) / 115][Stage 9:==============================>                        (64 + 16) / 115][Stage 9:===============================>                       (66 + 16) / 115][Stage 9:================================>                      (68 + 16) / 115][Stage 9:=================================>                     (69 + 16) / 115][Stage 9:=================================>                     (70 + 16) / 115][Stage 9:==================================>                    (72 + 16) / 115][Stage 9:===================================>                   (74 + 16) / 115][Stage 9:===================================>                   (75 + 16) / 115][Stage 9:====================================>                  (76 + 16) / 115][Stage 9:====================================>                  (77 + 16) / 115][Stage 9:=====================================>                 (78 + 16) / 115][Stage 9:======================================>                (80 + 16) / 115][Stage 9:======================================>                (81 + 16) / 115][Stage 9:=======================================>               (82 + 16) / 115][Stage 9:=======================================>               (83 + 16) / 115][Stage 9:=========================================>             (86 + 16) / 115][Stage 9:=========================================>             (87 + 16) / 115][Stage 9:==========================================>            (88 + 16) / 115][Stage 9:===========================================>           (90 + 16) / 115][Stage 9:===========================================>           (91 + 16) / 115][Stage 9:============================================>          (92 + 16) / 115][Stage 9:============================================>          (93 + 16) / 115][Stage 9:============================================>          (94 + 16) / 115][Stage 9:=============================================>         (95 + 16) / 115][Stage 9:=============================================>         (96 + 16) / 115][Stage 9:=============================================>         (96 + 17) / 115][Stage 9:==============================================>        (98 + 16) / 115][Stage 9:===============================================>       (99 + 16) / 115][Stage 9:==============================================>       (100 + 15) / 115][Stage 9:===============================================>      (101 + 14) / 115][Stage 9:===============================================>      (102 + 13) / 115][Stage 9:================================================>     (103 + 12) / 115][Stage 9:================================================>     (104 + 11) / 115][Stage 9:=================================================>    (105 + 10) / 115][Stage 9:==================================================>    (106 + 9) / 115][Stage 9:===================================================>   (107 + 8) / 115][Stage 9:====================================================>  (110 + 5) / 115][Stage 9:=====================================================> (112 + 3) / 115][Stage 9:======================================================>(113 + 2) / 115]                                                                                [Stage 19:================================>                        (9 + 7) / 16][Stage 19:================================>                        (9 + 7) / 16][Stage 19:================================>                        (9 + 7) / 16][Stage 19:===================================>                    (10 + 6) / 16][Stage 19:======================================>                 (11 + 5) / 16][Stage 19:==========================================>             (12 + 4) / 16][Stage 19:=============================================>          (13 + 3) / 16][Stage 19:=================================================>      (14 + 2) / 16][Stage 19:====================================================>   (15 + 1) / 16]                                                                                [Stage 28:===============>                                        (5 + 13) / 18][Stage 28:==================>                                     (6 + 12) / 18][Stage 28:=====================>                                  (7 + 11) / 18][Stage 28:========================>                               (8 + 10) / 18][Stage 28:============================>                            (9 + 9) / 18][Stage 28:===============================>                        (10 + 8) / 18][Stage 28:=====================================>                  (12 + 6) / 18][Stage 28:========================================>               (13 + 5) / 18][Stage 28:==============================================>         (15 + 3) / 18][Stage 28:=================================================>      (16 + 2) / 18][Stage 28:====================================================>   (17 + 1) / 18]                                                                                [Stage 31:===============>                                        (5 + 13) / 18][Stage 31:===============>                                        (5 + 13) / 18][Stage 31:==================>                                     (6 + 12) / 18][688.296s][warning][gc,alloc] Executor task launch worker for task 15.0 in stage 31.0 (TID 292): Retried waiting for GCLocker too often allocating 1048576 words
+[688.498s][warning][gc,alloc] Executor task launch worker for task 15.0 in stage 31.0 (TID 292): Retried waiting for GCLocker too often allocating 1048576 words
+[688.664s][warning][gc,alloc] Executor task launch worker for task 15.0 in stage 31.0 (TID 292): Retried waiting for GCLocker too often allocating 1048576 words
+[688.672s][warning][gc,alloc] Executor task launch worker for task 0.0 in stage 31.0 (TID 277): Retried waiting for GCLocker too often allocating 1048576 words
+[688.685s][warning][gc,alloc] Executor task launch worker for task 15.0 in stage 31.0 (TID 292): Retried waiting for GCLocker too often allocating 1048576 words
+[689.361s][warning][gc,alloc] Executor task launch worker for task 0.0 in stage 31.0 (TID 277): Retried waiting for GCLocker too often allocating 1048576 words
+[689.380s][warning][gc,alloc] Executor task launch worker for task 0.0 in stage 31.0 (TID 277): Retried waiting for GCLocker too often allocating 1048576 words
+[689.700s][warning][gc,alloc] Executor task launch worker for task 13.0 in stage 31.0 (TID 290): Retried waiting for GCLocker too often allocating 1048576 words
+[689.721s][warning][gc,alloc] Executor task launch worker for task 13.0 in stage 31.0 (TID 290): Retried waiting for GCLocker too often allocating 1048576 words
+[691.519s][warning][gc,alloc] Executor task launch worker for task 6.0 in stage 31.0 (TID 283): Retried waiting for GCLocker too often allocating 8388610 words
+26/10/10 09:35:11 ERROR Executor: Exception in task 12.0 in stage 31.0 (TID 289)
+org.apache.spark.memory.SparkOutOfMemoryError: [UNABLE_TO_ACQUIRE_MEMORY] Unable to acquire 56 bytes of memory, got 0.
+	at org.apache.spark.errors.SparkCoreErrors$.outOfMemoryError(SparkCoreErrors.scala:467)
+	at org.apache.spark.errors.SparkCoreErrors.outOfMemoryError(SparkCoreErrors.scala)
+	at org.apache.spark.memory.MemoryConsumer.throwOom(MemoryConsumer.java:157)
+	at org.apache.spark.memory.MemoryConsumer.allocatePage(MemoryConsumer.java:119)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.acquireNewPageIfNecessary(ShuffleExternalSorter.java:404)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.insertRecord(ShuffleExternalSorter.java:428)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.insertRecordIntoSorter(UnsafeShuffleWriter.java:250)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.write(UnsafeShuffleWriter.java:180)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+26/10/10 09:35:11 ERROR Executor: Exception in task 6.0 in stage 31.0 (TID 283)
+org.apache.spark.memory.SparkOutOfMemoryError: [UNABLE_TO_ACQUIRE_MEMORY] Unable to acquire 56 bytes of memory, got 0.
+	at org.apache.spark.errors.SparkCoreErrors$.outOfMemoryError(SparkCoreErrors.scala:467)
+	at org.apache.spark.errors.SparkCoreErrors.outOfMemoryError(SparkCoreErrors.scala)
+	at org.apache.spark.memory.MemoryConsumer.throwOom(MemoryConsumer.java:157)
+	at org.apache.spark.memory.MemoryConsumer.allocatePage(MemoryConsumer.java:119)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.acquireNewPageIfNecessary(ShuffleExternalSorter.java:404)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.insertRecord(ShuffleExternalSorter.java:428)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.insertRecordIntoSorter(UnsafeShuffleWriter.java:250)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.write(UnsafeShuffleWriter.java:180)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+26/10/10 09:35:12 ERROR TaskSetManager: Task 6 in stage 31.0 failed 1 times; aborting job
+[Stage 31:==================>                                     (6 + 11) / 18][Stage 31:===================>                                     (6 + 2) / 18]Traceback (most recent call last):
+  File "/home/lawzz/coes_pipeline/pipeline.py", line 162, in <module>
+    if nombre in ETAPAS: fn()
+                         ~~^^
+  File "/home/lawzz/coes_pipeline/pipeline.py", line 30, in run
+    t0 = time.perf_counter(); out = fn(*a, **k)
+                                    ~~^^^^^^^^^
+  File "/home/lawzz/coes_pipeline/pipeline.py", line 73, in silver_a
+    dup = df.groupBy(*clave).count().filter("count > 1").count()          # Regla: unicidad de clave
+  File "/home/lawzz/coes_pipeline/.venv/lib/python3.14/site-packages/pyspark/sql/dataframe.py", line 1238, in count
+    return int(self._jdf.count())
+               ~~~~~~~~~~~~~~~^^
+  File "/home/lawzz/coes_pipeline/.venv/lib/python3.14/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+        answer, self.gateway_client, self.target_id, self.name)
+  File "/home/lawzz/coes_pipeline/.venv/lib/python3.14/site-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+  File "/home/lawzz/coes_pipeline/.venv/lib/python3.14/site-packages/py4j/protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+        "An error occurred while calling {0}{1}{2}.\n".
+        format(target_id, ".", name), value)
+py4j.protocol.Py4JJavaError: An error occurred while calling o199.count.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 6 in stage 31.0 failed 1 times, most recent failure: Lost task 6.0 in stage 31.0 (TID 283) (10.255.255.254 executor driver): org.apache.spark.memory.SparkOutOfMemoryError: [UNABLE_TO_ACQUIRE_MEMORY] Unable to acquire 56 bytes of memory, got 0.
+	at org.apache.spark.errors.SparkCoreErrors$.outOfMemoryError(SparkCoreErrors.scala:467)
+	at org.apache.spark.errors.SparkCoreErrors.outOfMemoryError(SparkCoreErrors.scala)
+	at org.apache.spark.memory.MemoryConsumer.throwOom(MemoryConsumer.java:157)
+	at org.apache.spark.memory.MemoryConsumer.allocatePage(MemoryConsumer.java:119)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.acquireNewPageIfNecessary(ShuffleExternalSorter.java:404)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.insertRecord(ShuffleExternalSorter.java:428)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.insertRecordIntoSorter(UnsafeShuffleWriter.java:250)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.write(UnsafeShuffleWriter.java:180)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+Caused by: org.apache.spark.memory.SparkOutOfMemoryError: [UNABLE_TO_ACQUIRE_MEMORY] Unable to acquire 56 bytes of memory, got 0.
+	at org.apache.spark.errors.SparkCoreErrors$.outOfMemoryError(SparkCoreErrors.scala:467)
+	at org.apache.spark.errors.SparkCoreErrors.outOfMemoryError(SparkCoreErrors.scala)
+	at org.apache.spark.memory.MemoryConsumer.throwOom(MemoryConsumer.java:157)
+	at org.apache.spark.memory.MemoryConsumer.allocatePage(MemoryConsumer.java:119)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.acquireNewPageIfNecessary(ShuffleExternalSorter.java:404)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.insertRecord(ShuffleExternalSorter.java:428)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.insertRecordIntoSorter(UnsafeShuffleWriter.java:250)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.write(UnsafeShuffleWriter.java:180)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+

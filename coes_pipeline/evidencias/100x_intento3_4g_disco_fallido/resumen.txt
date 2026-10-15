@@ -1,0 +1,3 @@
+2026-10-10T08:25:10-05:00 escala=10x exit=0 tiempo_total_s=741 ram_pico_java_MB=6866 driver_mem=6g
+2026-10-10T09:21:24-05:00 escala=100x_4g exit=1 tiempo_total_s=138 ram_pico_java_MB=4725 driver_mem=4g
+2026-10-10T09:35:13-05:00 escala=100x_4g_disco exit=1 tiempo_total_s=694 ram_pico_java_MB=5155 driver_mem=4g

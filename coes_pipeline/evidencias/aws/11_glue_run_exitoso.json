@@ -1,0 +1,30 @@
+{
+    "JobRun": {
+        "Id": "jr_5371c482c973287e603d9edfde241e9bd377f2ebc8f4ab1b6e01dc8118cd55b7",
+        "Attempt": 0,
+        "JobName": "coes-pipeline-job",
+        "JobMode": "SCRIPT",
+        "JobRunQueuingEnabled": false,
+        "StartedOn": 1791672891.331,
+        "LastModifiedOn": 1791673526.002,
+        "CompletedOn": 1791673526.002,
+        "JobRunState": "SUCCEEDED",
+        "Arguments": {
+            "--ETAPAS": "silver_a,silver_b,gold",
+            "--SHUFFLE_PARTITIONS": "8",
+            "--ESCALA": "1x",
+            "--LAKE_ROOT": "s3a://bigdata-coes",
+            "--BROADCAST": "1"
+        },
+        "PredecessorRuns": [],
+        "AllocatedCapacity": 2,
+        "ExecutionTime": 627,
+        "Timeout": 2880,
+        "MaxCapacity": 2.0,
+        "WorkerType": "G.1X",
+        "NumberOfWorkers": 2,
+        "LogGroupName": "/aws-glue/jobs",
+        "GlueVersion": "4.0",
+        "DPUSeconds": 1254.0
+    }
+}

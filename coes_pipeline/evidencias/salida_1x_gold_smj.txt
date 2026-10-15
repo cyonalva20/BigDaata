@@ -1,0 +1,41 @@
+26/10/10 12:50:27 WARN Utils: Your hostname, Carlos resolves to a loopback address: 127.0.1.1; using 10.255.255.254 instead (on interface lo)
+26/10/10 12:50:27 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/10/10 12:50:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 5:>                  (0 + 8) / 8][Stage 6:>                  (0 + 0) / 7][Stage 5:>    (0 + 8) / 8][Stage 6:>    (0 + 0) / 7][Stage 7:>    (0 + 0) / 7][Stage 5:>    (1 + 7) / 8][Stage 6:>    (0 + 1) / 7][Stage 7:>    (0 + 0) / 7][Stage 5:>    (1 + 7) / 8][Stage 6:>    (1 + 1) / 7][Stage 7:>    (0 + 0) / 7][Stage 5:>    (1 + 7) / 8][Stage 6:=>   (2 + 1) / 7][Stage 7:>    (0 + 0) / 7][Stage 5:>    (1 + 7) / 8][Stage 6:==>  (4 + 1) / 7][Stage 7:>    (0 + 0) / 7][Stage 5:>    (1 + 7) / 8][Stage 6:===> (5 + 1) / 7][Stage 7:>    (0 + 0) / 7][Stage 5:==>                (1 + 7) / 8][Stage 7:>                  (0 + 1) / 7][Stage 5:==>                (1 + 7) / 8][Stage 7:=====>             (2 + 1) / 7][Stage 5:==>                (1 + 7) / 8][Stage 7:========>          (3 + 1) / 7][Stage 5:==>                (1 + 7) / 8][Stage 7:=============>     (5 + 1) / 7][Stage 5:=======>                                                   (1 + 7) / 8]                                                                                [Stage 12:>                                                         (0 + 8) / 8]                                                                                [Stage 17:=======>                                                  (1 + 7) / 8][Stage 17:==>               (1 + 7) / 8][Stage 18:=======>          (3 + 1) / 7][Stage 17:====>             (2 + 6) / 8][Stage 18:============>     (5 + 2) / 7][Stage 21:>                                                         (0 + 4) / 4]                                                                                [Stage 26:=======>                                                  (1 + 7) / 8][Stage 26:=>  (2 + 6) / 8][Stage 27:==> (5 + 2) / 7][Stage 28:>   (0 + 0) / 7]                                                                                [Stage 33:>                                                         (0 + 4) / 4]                                                                                [Stage 39:>                                                         (0 + 8) / 8][Stage 39:=======>                                                  (1 + 7) / 8][Stage 39:==============>                                           (2 + 6) / 8][Stage 39:====================================>                     (5 + 3) / 8]                                                                                [gold] {'segundos': 31.1, 'despacho': 6533616, 'precios': 9587472}
+{
+  "escala": "1x_gold_smj",
+  "inicio": "2026-10-10T12:50:30",
+  "etapas": {
+    "gold": {
+      "segundos": 31.1,
+      "despacho": 6533616,
+      "precios": 9587472
+    }
+  },
+  "calidad": {
+    "gold_despacho": {
+      "filas_a2": 6533616,
+      "filas_gold": 6533616,
+      "join_multiplico_filas": false,
+      "estrategia_join": "SortMergeJoin",
+      "filas_sin_costo": 4982016,
+      "por_costo_estado": {
+        "con_costo": 1551600,
+        "fecha_sin_costo": 245664,
+        "central_sin_costo_en_a3": 4736352
+      }
+    },
+    "gold_precios": {
+      "filas": 9587472,
+      "ceros_tratados_como_faltantes": 269627
+    }
+  },
+  "etapas_ejecutadas": [
+    "gold"
+  ],
+  "broadcast": false,
+  "total_segundos": 31.1,
+  "fin": "2026-10-10T12:51:01"
+}

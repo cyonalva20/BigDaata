@@ -1,0 +1,32 @@
+{
+    "Job": {
+        "Name": "coes-pipeline-job",
+        "JobMode": "SCRIPT",
+        "JobRunQueuingEnabled": false,
+        "Role": "AWSGlueServiceRole-COES",
+        "CreatedOn": 1791669840.302,
+        "LastModifiedOn": 1791671882.102,
+        "ExecutionProperty": {
+            "MaxConcurrentRuns": 1
+        },
+        "Command": {
+            "Name": "glueetl",
+            "ScriptLocation": "s3://bigdata-coes/scripts/pipeline.py",
+            "PythonVersion": "3"
+        },
+        "DefaultArguments": {
+            "--ETAPAS": "silver_a,silver_b,gold",
+            "--SHUFFLE_PARTITIONS": "8",
+            "--ESCALA": "1x",
+            "--LAKE_ROOT": "s3://bigdata-coes",
+            "--BROADCAST": "1"
+        },
+        "MaxRetries": 0,
+        "AllocatedCapacity": 2,
+        "Timeout": 2880,
+        "MaxCapacity": 2.0,
+        "WorkerType": "G.1X",
+        "NumberOfWorkers": 2,
+        "GlueVersion": "4.0"
+    }
+}

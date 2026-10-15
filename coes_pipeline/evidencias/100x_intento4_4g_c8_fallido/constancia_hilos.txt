@@ -1,0 +1,4 @@
+# Transcrito de `ps -ef` el 2026-10-10 ~10:20, durante el intento 4:
+# java ... -Xmx4g ... org.apache.spark.deploy.SparkSubmit --conf spark.master=local[8] --conf spark.driver.memory=4g
+#   --conf spark.app.name=coes-pipeline-100x_4g_c8 --conf spark.sql.shuffle.partitions=800
+# Python del venv: 3.14 (ruta .../.venv/lib/python3.14/site-packages/pyspark); Java: openjdk-17

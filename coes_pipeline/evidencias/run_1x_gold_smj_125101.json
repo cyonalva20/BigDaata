@@ -1,0 +1,35 @@
+{
+  "escala": "1x_gold_smj",
+  "inicio": "2026-10-10T12:50:30",
+  "etapas": {
+    "gold": {
+      "segundos": 31.1,
+      "despacho": 6533616,
+      "precios": 9587472
+    }
+  },
+  "calidad": {
+    "gold_despacho": {
+      "filas_a2": 6533616,
+      "filas_gold": 6533616,
+      "join_multiplico_filas": false,
+      "estrategia_join": "SortMergeJoin",
+      "filas_sin_costo": 4982016,
+      "por_costo_estado": {
+        "con_costo": 1551600,
+        "fecha_sin_costo": 245664,
+        "central_sin_costo_en_a3": 4736352
+      }
+    },
+    "gold_precios": {
+      "filas": 9587472,
+      "ceros_tratados_como_faltantes": 269627
+    }
+  },
+  "etapas_ejecutadas": [
+    "gold"
+  ],
+  "broadcast": false,
+  "total_segundos": 31.1,
+  "fin": "2026-10-10T12:51:01"
+}

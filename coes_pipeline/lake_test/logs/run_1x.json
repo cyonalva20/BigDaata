@@ -1,0 +1,114 @@
+{
+  "entorno": "local",
+  "escala": "1x",
+  "inicio": "2026-10-10T17:46:48",
+  "etapas": {
+    "silver_a": {
+      "segundos": 28.78,
+      "a1": 80640,
+      "a2": 85440,
+      "a3": 1800,
+      "a4": 25632
+    },
+    "silver_b": {
+      "segundos": 6.73,
+      "b1_mantenimientos": 200,
+      "b2_potencia_indisponible": 240,
+      "b3_reprograma": 35,
+      "b4_pr06": 4272
+    },
+    "gold": {
+      "segundos": 4.46,
+      "despacho": 85440,
+      "precios": 25632
+    }
+  },
+  "calidad": {
+    "a1": {
+      "filas_in": 80640,
+      "filas_silver": 80640,
+      "claves_duplicadas": 0,
+      "nulos_columna_critica": 0,
+      "pct_completitud": 100.0,
+      "negativos": 0
+    },
+    "a2": {
+      "filas_in": 85440,
+      "filas_silver": 85440,
+      "claves_duplicadas": 0,
+      "nulos_columna_critica": 0,
+      "pct_completitud": 100.0,
+      "negativos": 0,
+      "por_origen": {
+        "ambas": 85440
+      }
+    },
+    "a3": {
+      "filas_in": 1800,
+      "filas_silver": 1800,
+      "claves_duplicadas": 0,
+      "nulos_columna_critica": 0,
+      "pct_completitud": 100.0,
+      "negativos": 0
+    },
+    "a4": {
+      "filas_in": 25632,
+      "filas_silver": 25632,
+      "claves_duplicadas": 0,
+      "nulos_columna_critica": 0,
+      "pct_completitud": 100.0,
+      "negativos": 10
+    },
+    "cobertura_a2": {
+      "dias": 89,
+      "dias_con_programa": 84
+    },
+    "b1_mantenimientos": {
+      "filas_in": 200,
+      "filas_silver": 200,
+      "fecha_ilegible_rechazadas": 0
+    },
+    "b2_potencia_indisponible": {
+      "filas_in": 240,
+      "filas_silver": 240,
+      "fecha_ilegible_rechazadas": 0
+    },
+    "b3_reprograma": {
+      "filas_in": 35,
+      "filas_silver": 35,
+      "fecha_ilegible_rechazadas": 0
+    },
+    "b4_pr06": {
+      "filas_in": 4272,
+      "filas_silver": 4272,
+      "fecha_ilegible_rechazadas": 0
+    },
+    "b4": {
+      "bloques": 4272,
+      "claves_duplicadas": 0,
+      "label_rdo_1": 1116
+    },
+    "gold_despacho": {
+      "filas_a2": 85440,
+      "filas_gold": 85440,
+      "join_multiplico_filas": false,
+      "estrategia_join": "BroadcastHashJoin",
+      "filas_sin_costo": 0,
+      "por_costo_estado": {
+        "con_costo": 85440
+      }
+    },
+    "gold_precios": {
+      "filas": 25632,
+      "ceros_tratados_como_faltantes": 2157
+    }
+  },
+  "broadcast": true,
+  "etapas_solicitadas": [
+    "silver_a",
+    "silver_b",
+    "gold"
+  ],
+  "total_segundos": 39.99,
+  "fin": "2026-10-10T17:47:28"
+}

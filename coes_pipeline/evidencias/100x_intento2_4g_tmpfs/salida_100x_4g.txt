@@ -1,0 +1,278 @@
+26/10/10 09:19:09 WARN Utils: Your hostname, Carlos resolves to a loopback address: 127.0.1.1; using 10.255.255.254 instead (on interface lo)
+26/10/10 09:19:09 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/10/10 09:19:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 4:================================>                         (9 + 7) / 16][Stage 4:===================================>                     (10 + 6) / 16][Stage 4:=======================================>                 (11 + 5) / 16][Stage 4:==========================================>              (12 + 4) / 16][Stage 4:==============================================>          (13 + 3) / 16][Stage 4:=====================================================>   (15 + 1) / 16]                                                                                [Stage 7:================================>                         (9 + 7) / 16][Stage 7:================================>                         (9 + 7) / 16]26/10/10 09:21:22 ERROR DiskBlockObjectWriter: Exception occurred while manually close the output stream to file /tmp/blockmgr-198c1b72-6bee-48fe-8434-40a50084ab24/0c/temp_shuffle_12f581bb-bdee-49e7-8ebb-50eb2286178f, No space left on device
+26/10/10 09:21:22 ERROR DiskBlockObjectWriter: Exception occurred while manually close the output stream to file /tmp/blockmgr-198c1b72-6bee-48fe-8434-40a50084ab24/0c/temp_shuffle_b56d8ebf-c669-4291-8758-4b8bba6e2568, No space left on device
+26/10/10 09:21:22 ERROR TaskMemoryManager: error while calling spill() on org.apache.spark.shuffle.sort.ShuffleExternalSorter@360e0a65
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at org.apache.spark.storage.TimeTrackingOutputStream.write(TimeTrackingOutputStream.java:59)
+	at org.apache.spark.io.MutableCheckedOutputStream.write(MutableCheckedOutputStream.scala:43)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:127)
+	at net.jpountz.lz4.LZ4BlockOutputStream.flushBufferedData(LZ4BlockOutputStream.java:225)
+	at net.jpountz.lz4.LZ4BlockOutputStream.write(LZ4BlockOutputStream.java:178)
+	at org.apache.spark.storage.DiskBlockObjectWriter.write(DiskBlockObjectWriter.scala:323)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.writeSortedFile(ShuffleExternalSorter.java:243)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.spill(ShuffleExternalSorter.java:295)
+	at org.apache.spark.memory.TaskMemoryManager.trySpillAndAcquire(TaskMemoryManager.java:227)
+	at org.apache.spark.memory.TaskMemoryManager.acquireExecutionMemory(TaskMemoryManager.java:190)
+	at org.apache.spark.memory.TaskMemoryManager.allocatePage(TaskMemoryManager.java:317)
+	at org.apache.spark.memory.MemoryConsumer.allocateArray(MemoryConsumer.java:96)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.growPointerArrayIfNecessary(ShuffleExternalSorter.java:369)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.insertRecord(ShuffleExternalSorter.java:424)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.insertRecordIntoSorter(UnsafeShuffleWriter.java:250)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.write(UnsafeShuffleWriter.java:180)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	Suppressed: java.io.IOException: No space left on device
+		at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+		at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+		at org.apache.spark.storage.TimeTrackingOutputStream.write(TimeTrackingOutputStream.java:59)
+		at org.apache.spark.io.MutableCheckedOutputStream.write(MutableCheckedOutputStream.scala:43)
+		at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+		at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+		at net.jpountz.lz4.LZ4BlockOutputStream.flush(LZ4BlockOutputStream.java:245)
+		at org.apache.spark.serializer.DummySerializerInstance$1.flush(DummySerializerInstance.java:50)
+		at org.apache.spark.storage.DiskBlockObjectWriter.commitAndGet(DiskBlockObjectWriter.scala:216)
+		at org.apache.spark.storage.DiskBlockObjectWriter.$anonfun$close$1(DiskBlockObjectWriter.scala:199)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.storage.DiskBlockObjectWriter.close(DiskBlockObjectWriter.scala:201)
+		at org.apache.spark.shuffle.sort.ShuffleExternalSorter.writeSortedFile(ShuffleExternalSorter.java:251)
+		... 22 more
+26/10/10 09:21:22 ERROR ShuffleExternalSorter: Unable to grow the pointer array
+26/10/10 09:21:22 ERROR TaskMemoryManager: error while calling spill() on org.apache.spark.shuffle.sort.ShuffleExternalSorter@aac5dde
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at org.apache.spark.storage.TimeTrackingOutputStream.write(TimeTrackingOutputStream.java:59)
+	at org.apache.spark.io.MutableCheckedOutputStream.write(MutableCheckedOutputStream.scala:43)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:127)
+	at net.jpountz.lz4.LZ4BlockOutputStream.flushBufferedData(LZ4BlockOutputStream.java:225)
+	at net.jpountz.lz4.LZ4BlockOutputStream.write(LZ4BlockOutputStream.java:178)
+	at org.apache.spark.storage.DiskBlockObjectWriter.write(DiskBlockObjectWriter.scala:323)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.writeSortedFile(ShuffleExternalSorter.java:243)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.spill(ShuffleExternalSorter.java:295)
+	at org.apache.spark.memory.TaskMemoryManager.trySpillAndAcquire(TaskMemoryManager.java:227)
+	at org.apache.spark.memory.TaskMemoryManager.acquireExecutionMemory(TaskMemoryManager.java:190)
+	at org.apache.spark.memory.TaskMemoryManager.allocatePage(TaskMemoryManager.java:317)
+	at org.apache.spark.memory.MemoryConsumer.allocateArray(MemoryConsumer.java:96)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.growPointerArrayIfNecessary(ShuffleExternalSorter.java:369)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.insertRecord(ShuffleExternalSorter.java:424)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.insertRecordIntoSorter(UnsafeShuffleWriter.java:250)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.write(UnsafeShuffleWriter.java:180)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	Suppressed: java.io.IOException: No space left on device
+		at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+		at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+		at org.apache.spark.storage.TimeTrackingOutputStream.write(TimeTrackingOutputStream.java:59)
+		at org.apache.spark.io.MutableCheckedOutputStream.write(MutableCheckedOutputStream.scala:43)
+		at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+		at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+		at net.jpountz.lz4.LZ4BlockOutputStream.flush(LZ4BlockOutputStream.java:245)
+		at org.apache.spark.serializer.DummySerializerInstance$1.flush(DummySerializerInstance.java:50)
+		at org.apache.spark.storage.DiskBlockObjectWriter.commitAndGet(DiskBlockObjectWriter.scala:216)
+		at org.apache.spark.storage.DiskBlockObjectWriter.$anonfun$close$1(DiskBlockObjectWriter.scala:199)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.storage.DiskBlockObjectWriter.close(DiskBlockObjectWriter.scala:201)
+		at org.apache.spark.shuffle.sort.ShuffleExternalSorter.writeSortedFile(ShuffleExternalSorter.java:251)
+		... 22 more
+26/10/10 09:21:22 ERROR ShuffleExternalSorter: Unable to grow the pointer array
+26/10/10 09:21:22 ERROR Executor: Exception in task 9.0 in stage 7.0 (TID 44)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at org.apache.spark.storage.TimeTrackingOutputStream.write(TimeTrackingOutputStream.java:59)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:127)
+	at net.jpountz.lz4.LZ4BlockOutputStream.flushBufferedData(LZ4BlockOutputStream.java:225)
+	at net.jpountz.lz4.LZ4BlockOutputStream.write(LZ4BlockOutputStream.java:178)
+	at org.apache.spark.storage.DiskBlockObjectWriter.write(DiskBlockObjectWriter.scala:323)
+	at org.apache.spark.util.collection.unsafe.sort.UnsafeSorterSpillWriter.write(UnsafeSorterSpillWriter.java:136)
+	at org.apache.spark.util.collection.unsafe.sort.UnsafeExternalSorter.spillIterator(UnsafeExternalSorter.java:576)
+	at org.apache.spark.util.collection.unsafe.sort.UnsafeExternalSorter.spill(UnsafeExternalSorter.java:231)
+	at org.apache.spark.util.collection.unsafe.sort.UnsafeExternalSorter.createWithExistingInMemorySorter(UnsafeExternalSorter.java:115)
+	at org.apache.spark.sql.execution.UnsafeKVExternalSorter.<init>(UnsafeKVExternalSorter.java:158)
+	at org.apache.spark.sql.execution.UnsafeFixedWidthAggregationMap.destructAndCreateExternalSorter(UnsafeFixedWidthAggregationMap.java:243)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.hashAgg_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.hashAgg_doAggregateWithKeys_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.write(UnsafeShuffleWriter.java:179)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+26/10/10 09:21:22 ERROR Executor: Exception in task 5.0 in stage 7.0 (TID 40)
+org.apache.spark.memory.SparkOutOfMemoryError: error while calling spill() on org.apache.spark.shuffle.sort.ShuffleExternalSorter@360e0a65 : No space left on device
+	at org.apache.spark.memory.TaskMemoryManager.trySpillAndAcquire(TaskMemoryManager.java:253)
+	at org.apache.spark.memory.TaskMemoryManager.acquireExecutionMemory(TaskMemoryManager.java:190)
+	at org.apache.spark.memory.TaskMemoryManager.allocatePage(TaskMemoryManager.java:317)
+	at org.apache.spark.memory.MemoryConsumer.allocateArray(MemoryConsumer.java:96)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.growPointerArrayIfNecessary(ShuffleExternalSorter.java:369)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.insertRecord(ShuffleExternalSorter.java:424)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.insertRecordIntoSorter(UnsafeShuffleWriter.java:250)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.write(UnsafeShuffleWriter.java:180)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+26/10/10 09:21:22 ERROR Executor: Exception in task 11.0 in stage 7.0 (TID 46)
+org.apache.spark.memory.SparkOutOfMemoryError: error while calling spill() on org.apache.spark.shuffle.sort.ShuffleExternalSorter@aac5dde : No space left on device
+	at org.apache.spark.memory.TaskMemoryManager.trySpillAndAcquire(TaskMemoryManager.java:253)
+	at org.apache.spark.memory.TaskMemoryManager.acquireExecutionMemory(TaskMemoryManager.java:190)
+	at org.apache.spark.memory.TaskMemoryManager.allocatePage(TaskMemoryManager.java:317)
+	at org.apache.spark.memory.MemoryConsumer.allocateArray(MemoryConsumer.java:96)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.growPointerArrayIfNecessary(ShuffleExternalSorter.java:369)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.insertRecord(ShuffleExternalSorter.java:424)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.insertRecordIntoSorter(UnsafeShuffleWriter.java:250)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.write(UnsafeShuffleWriter.java:180)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+26/10/10 09:21:23 ERROR TaskSetManager: Task 5 in stage 7.0 failed 1 times; aborting job
+[Stage 7:================================>                         (9 + 6) / 16][Stage 7:================================>                         (9 + 2) / 16]Traceback (most recent call last):
+  File "/home/lawzz/coes_pipeline/pipeline.py", line 162, in <module>
+    if nombre in ETAPAS: fn()
+                         ~~^^
+  File "/home/lawzz/coes_pipeline/pipeline.py", line 30, in run
+    t0 = time.perf_counter(); out = fn(*a, **k)
+                                    ~~^^^^^^^^^
+  File "/home/lawzz/coes_pipeline/pipeline.py", line 73, in silver_a
+    dup = df.groupBy(*clave).count().filter("count > 1").count()          # Regla: unicidad de clave
+  File "/home/lawzz/coes_pipeline/.venv/lib/python3.14/site-packages/pyspark/sql/dataframe.py", line 1238, in count
+    return int(self._jdf.count())
+               ~~~~~~~~~~~~~~~^^
+  File "/home/lawzz/coes_pipeline/.venv/lib/python3.14/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+        answer, self.gateway_client, self.target_id, self.name)
+  File "/home/lawzz/coes_pipeline/.venv/lib/python3.14/site-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+  File "/home/lawzz/coes_pipeline/.venv/lib/python3.14/site-packages/py4j/protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+        "An error occurred while calling {0}{1}{2}.\n".
+        format(target_id, ".", name), value)
+py4j.protocol.Py4JJavaError: An error occurred while calling o88.count.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 5 in stage 7.0 failed 1 times, most recent failure: Lost task 5.0 in stage 7.0 (TID 40) (10.255.255.254 executor driver): org.apache.spark.memory.SparkOutOfMemoryError: error while calling spill() on org.apache.spark.shuffle.sort.ShuffleExternalSorter@360e0a65 : No space left on device
+	at org.apache.spark.memory.TaskMemoryManager.trySpillAndAcquire(TaskMemoryManager.java:253)
+	at org.apache.spark.memory.TaskMemoryManager.acquireExecutionMemory(TaskMemoryManager.java:190)
+	at org.apache.spark.memory.TaskMemoryManager.allocatePage(TaskMemoryManager.java:317)
+	at org.apache.spark.memory.MemoryConsumer.allocateArray(MemoryConsumer.java:96)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.growPointerArrayIfNecessary(ShuffleExternalSorter.java:369)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.insertRecord(ShuffleExternalSorter.java:424)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.insertRecordIntoSorter(UnsafeShuffleWriter.java:250)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.write(UnsafeShuffleWriter.java:180)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+Caused by: org.apache.spark.memory.SparkOutOfMemoryError: error while calling spill() on org.apache.spark.shuffle.sort.ShuffleExternalSorter@360e0a65 : No space left on device
+	at org.apache.spark.memory.TaskMemoryManager.trySpillAndAcquire(TaskMemoryManager.java:253)
+	at org.apache.spark.memory.TaskMemoryManager.acquireExecutionMemory(TaskMemoryManager.java:190)
+	at org.apache.spark.memory.TaskMemoryManager.allocatePage(TaskMemoryManager.java:317)
+	at org.apache.spark.memory.MemoryConsumer.allocateArray(MemoryConsumer.java:96)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.growPointerArrayIfNecessary(ShuffleExternalSorter.java:369)
+	at org.apache.spark.shuffle.sort.ShuffleExternalSorter.insertRecord(ShuffleExternalSorter.java:424)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.insertRecordIntoSorter(UnsafeShuffleWriter.java:250)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.write(UnsafeShuffleWriter.java:180)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+

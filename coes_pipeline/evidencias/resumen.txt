@@ -1,0 +1,16 @@
+2026-10-10T02:03:32-05:00 escala=1x exit=0 tiempo_total_s=144 ram_pico_java_MB=5307 driver_mem=6g
+2026-10-10T02:05:45-05:00 escala=1x exit=0 tiempo_total_s=133 ram_pico_java_MB=6277 driver_mem=6g
+2026-10-10T02:08:04-05:00 escala=1x exit=0 tiempo_total_s=139 ram_pico_java_MB=6256 driver_mem=6g
+2026-10-10T02:27:52-05:00 escala=1x exit=0 tiempo_total_s=177 ram_pico_java_MB=5029 driver_mem=6g
+2026-10-10T07:42:22-05:00 escala=1x exit=0 tiempo_total_s=137 ram_pico_java_MB=5563 driver_mem=6g
+2026-10-10T07:44:27-05:00 escala=1x exit=0 tiempo_total_s=125 ram_pico_java_MB=4835 driver_mem=6g
+2026-10-10T08:06:08-05:00 escala=10x exit=0 tiempo_total_s=680 ram_pico_java_MB=6890 driver_mem=6g
+2026-10-10T08:25:10-05:00 escala=10x exit=0 tiempo_total_s=741 ram_pico_java_MB=6866 driver_mem=6g
+2026-10-10T09:21:24-05:00 escala=100x_4g exit=1 tiempo_total_s=138 ram_pico_java_MB=4725 driver_mem=4g
+2026-10-10T09:35:13-05:00 escala=100x_4g_disco exit=1 tiempo_total_s=694 ram_pico_java_MB=5155 driver_mem=4g
+2026-10-10T10:24:06-05:00 escala=100x_4g_c8 exit=1 tiempo_total_s=2736 ram_pico_java_MB=5316 driver_mem=4g
+2026-10-10T11:05:52-05:00 escala=100x_gold_smj exit=0 tiempo_total_s=1835 ram_pico_java_MB=5032 driver_mem=4g
+2026-10-10T12:08:26-05:00 escala=1x_c8disco exit=0 tiempo_total_s=63 ram_pico_java_MB=4593 driver_mem=4g
+2026-10-10T12:16:28-05:00 escala=10x_c8disco exit=0 tiempo_total_s=360 ram_pico_java_MB=5069 driver_mem=4g
+2026-10-10T12:51:01-05:00 escala=1x_gold_smj exit=0 tiempo_total_s=37 ram_pico_java_MB=4770 driver_mem=4g
+2026-10-10T12:53:56-05:00 escala=10x_gold_smj exit=0 tiempo_total_s=175 ram_pico_java_MB=4983 driver_mem=4g
